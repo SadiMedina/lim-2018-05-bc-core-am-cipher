@@ -1,0 +1,15 @@
+
+body{
+    margin: 5%;
+    background: pink url("../img/ddd.png") no-repeat center center;
+    text-align: center;
+ }
+
+ footer{
+    font-size: 0.75em;
+    text-align:center;
+    padding-top: 15px;
+    color:  #ffffff;/*color blanco*/
+    background: #000000;/*color negro*/
+    clear: both;
+  }

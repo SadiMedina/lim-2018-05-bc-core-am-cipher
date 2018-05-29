@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1>CODIFICA Y DECODIFICA UN TEXTO</h1> 
+      <P>Esta herramienta te ayudara a codificar y decodificar cualquier texto</P><br>
+        
+        <!-- En este TextArea se indica la cantidad de desplazamiento  -->
+        <input type="text" maxlength="3" value="4" id="desplazamiento"> <br>
+        
+        <!-- En este TextArea  se ingresaran los textos a Codificar-Decodificar  -->
+        <textarea name="textarea" rows="8" cols="40" id="text-trabajo" placeholder="Escriba el texto a Codificar o Descodificar."></textarea><br>
+
+        <!-- Se insertan botones para Codificar-Decodificar  -->
+        <button name="codificar" id="btn1" onclick="encriptar()">Codificar</button>
+        <button name="decodificar" id="btn2" onclick="desencriptar()">Decodificar</button>
+        <button name="borrar" id="btn3" onclick="borrar()">Borrar</button>
+        <br><br>
+
+        <!-- En este TextArea se visualizara el Texto Codificado-Decodificado  -->
+        <textarea name="textarea" rows="8" cols="40" id="text-resultado" placeholder="Aqui se muestra el resultado."></textarea><br><br><br><br><br>
+    
+      <footer>
+        <a href="https://www.facebook.com/Medina.Chavez.Sadi"> <img src="../img/facebook-wrap.png" alt="Logo FB"   class="social-icon"> </a>
+        <p>&copy; 2018 Sadi Medina</p>
+      </footer>
+
+    <div id="root"></div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
