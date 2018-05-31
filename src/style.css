@@ -1,15 +1,74 @@
-
+/*Color de la pagina */
 body{
-    margin: 5%;
-    background: pink url("../img/ddd.png") no-repeat center center;
-    text-align: center;
- }
-
- footer{
-    font-size: 0.75em;
-    text-align:center;
-    padding-top: 15px;
-    color:  #ffffff;/*color blanco*/
-    background: #000000;/*color negro*/
-    clear: both;
+  background-color: #0a0a0a;
   }
+
+/*Propiedades del #Container*/
+#container{
+  margin: 0%;
+	width:60%;
+  background:rgb(139, 8, 41);
+  text-align: center;
+	margin:20px auto;
+	overflow:auto;
+  padding:25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Propiedades de header y footer*/
+header,footer{
+  width: 100%;
+  height: 5%;
+  margin: auto;
+  background-color: rgb(16, 116, 107);
+}
+
+/*Propiedades de los Iconos FB-Wahtsapp*/
+.social-icon1{
+  padding-left: 2em;
+  padding-right: 0em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  opacity: 0.5;
+  float: center;
+}
+
+.social-icon2{
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  opacity: 0.5;
+  float: center;
+}
+
+/*Definiendo Stylos a los TextAreas*/
+#text-trabajo{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#E0FFFF;
+}
+
+#text-resultado{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#EEE8AA;
+}
+
+/*Definiendo Stylos de los botones*/
+.boton{
+  background-color: black; color: white;
+  border: none;
+  padding: 0.5%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
