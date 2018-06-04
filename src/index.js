@@ -11,8 +11,8 @@ document.getElementById("decodificar").addEventListener("click",function(){
 document.getElementById("text-resultado").value = window.cipher.decode(offset.value,string.value);
 })
 
-document.getElementById("borrar").addEventListener("click",function(){
-document.getElementById("text-trabajo").value = " ";
+clear.addEventListener("click",function(){
+document.getElementById("text-trabajo").value = "";
 })
 
 

@@ -1,7 +1,7 @@
 window.cipher = {
   encode:(offset, string)=>{
     let posicion = parseInt(offset); //convertiendo en entero el desplazamiento
-    let palabraCifrada= " "; //para concatenar
+    let palabraCifrada= ""; //para concatenar
     for(let i=0;i<string.length;i++){
        let codigoAscii=string.charCodeAt(i);
        if(codigoAscii >= 65 && codigoAscii <=90){ 
@@ -15,7 +15,7 @@ window.cipher = {
 
   decode:(offset, string)=>{
      let posicion = parseInt(offset);
-     let palabraDescifrada = " " ; 
+     let palabraDescifrada = "" ; 
      for(let i=0;i<string.length;i++){
         let codigoAscii=string.charCodeAt(i);
         if(codigoAscii >= 65 && codigoAscii <=90){
@@ -27,4 +27,11 @@ window.cipher = {
          return palabraDescifrada;
          },
          
+  createCipherWithOffset:(offset)=>{
+    let x = {
+      encode:(string)=>{cipher.encode(offset,string)},
+      decode:(string)=>{cipher.decode(offset,string)}
     }
+    return x;
+  }
+}
